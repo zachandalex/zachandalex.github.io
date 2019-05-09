@@ -3,6 +3,7 @@
 
 /* * is a wildcard referring to all elements. */
 * { margin: 0; box-sizing: border-box; } 
+    /*border-box keeps page from displaying larger than 100%*/
 
 body { 
     font-size: 16px; 
