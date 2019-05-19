@@ -1,0 +1,83 @@
+.logo
+    {
+        float: left;
+        padding:0;
+        width: 15%;
+    }
+header
+    {
+        display: block;
+        font-size: 45px;
+        font-family: 'Oswald', sans-serif;
+        background-color: #0a2a67;
+        color: #74d315;
+        text-align: center;
+        margin-bottom: 0px;
+        padding: 15px;  
+    }
+.menu
+    {
+        font-size: 25px;
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        background-color: #64b4e6;
+        padding: 1px;
+        display: block;
+    }
+.menu a
+    {
+        color: #000000;  
+        text-decoration: none;  
+    }
+a:visited
+    {
+        color: #0a2a67;
+    }
+a:hover 
+    {
+        text-decoration: underline;
+        color: #74d315;
+    }
+ul
+    {
+        list-style: none;
+    }
+.motto
+    {
+        font-size: 20px;
+        font-family: 'Open Sans Condensed', sans-serif;
+        color: #eeeedb;
+        text-align: center;
+        margin: auto;
+    }
+h1 
+    {
+        font-size: 35px; 
+        font-family: 'Oswald', sans-serif;
+        color: #0a2a67;
+    }
+h2 
+    {
+        font-size: 30px; 
+        font-family: 'Oswald', sans-serif;
+        color: black
+    }
+h3 
+    {
+        font-size: 25px; 
+        font-family: 'Oswald', sans-serif;
+        color: black;
+    }
+p   
+    { 
+        font-size: 20px; 
+        font-family: 'Open Sans Condensed', sans-serif;
+        color: black;
+    }
+#footer
+    {
+        font-size: 25px;
+        font-family: 'Oswald', sans-serif;
+        background-color: #0a2a67;
+        color: #74d315;
+    }
