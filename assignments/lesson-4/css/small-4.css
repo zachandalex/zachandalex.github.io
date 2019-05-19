@@ -19,7 +19,7 @@ header
         font-size: 25px;
         font-family: 'Oswald', sans-serif;
         text-align: center;
-        background-color: #64b4e6;
+        background-color: /*#64b4e6;*/ #eeeedb;
         padding: 1px;
         /*display: block;*/
     }
