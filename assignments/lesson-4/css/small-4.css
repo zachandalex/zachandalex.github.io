@@ -37,6 +37,10 @@ a:hover
         text-decoration: underline;
         color: #74d315;
     }
+a:active
+    {
+        background-color: #0a2a67;
+    }
 ul
     {
         list-style: none;
