@@ -1,0 +1,249 @@
+*
+    {box-sizing: border-box;}
+header
+    {
+        display: block;
+        font-size: 45px;
+        font-family: 'Oswald', sans-serif;
+        background-color: #0a2a67;
+        color: #74d315;
+        text-align: center;
+        padding: 25px;  
+    }
+body
+    {
+        margin: 0;
+        box-sizing: border-box;
+    }
+h1 
+    {
+        font-size: 35px; 
+        font-family: 'Oswald', sans-serif;
+        color: #74d315;
+    }
+h2 
+    {
+        font-size: 30px; 
+        font-family: 'Oswald', sans-serif;
+        color: black;
+        text-align: center;        
+    }
+h3 
+    {
+        font-size: 25px; 
+        font-family: 'Oswald', sans-serif;
+        color: black;
+    }
+main
+    {
+        max-width: 900px;
+        margin:0 auto; 
+    }
+
+ul
+    {
+        /*position: fixed;*/
+        list-style-type: none;
+        margin: auto;
+        padding: 0;
+        width: 100%;
+    }
+
+p   
+    { 
+        font-size: 20px; 
+        font-family: 'Open Sans Condensed', sans-serif;
+        color: black;
+    }
+nav 
+    {
+        margin: auto;
+        text-align: center;
+        width: 100%;
+        padding: 5px;
+        background-color: #eeeedb;
+        color: black;
+        display: inline-block;
+    }
+article
+    {
+        background-color: #64b4e6;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+article h2
+    {
+        text-align: left;
+    }
+footer p
+    {
+        font-size: 25px;
+        font-family: 'Oswald', sans-serif;
+        background-color: #0a2a67;
+        color: #74d315;
+        text-align: center;
+        height: auto;
+        padding: 5px;
+    }
+/*table
+    {
+        display: none;
+    }
+table h3
+    {
+        display:none;
+    }*/
+footer a
+    {
+        color: #74d315;
+    }
+.forecast
+    {
+        display: none;
+    }
+.contact h2
+    {
+        background-color: #0a2a67;
+        color: #74d315;
+    }
+.contact p
+    {
+        background-color: #0a2a67;
+        color: #74d315;
+        text-align: center;
+    }
+.prestonmap
+    {
+        max-width: 600px;
+        display: block;
+        margin:0 auto;
+        width: 90%;
+        padding-bottom: 20px;
+    }
+article .motto
+    {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+.articleimg
+    {
+        max-width: 600px;
+        display: block;
+        margin: 0 auto;
+        /*height: auto;*/
+        /*padding: 10px;*/
+        width: 90%;
+    }
+.logo
+    {
+        float: auto;
+        height: 120px;
+    }
+.herodiv
+    {
+        margin: auto;
+        position: relative;
+    }
+.heroimg
+    {
+        height: auto;
+        margin: auto;
+        width: 100%;
+    }
+.stats
+    {
+        position: absolute;
+        text-align: right;
+        top: 25px;
+        left: 50px;
+        max-height: 75%;
+        background: #64b4e6;
+        border: 1px solid #eeeedb;
+        /*padding: 1.5rem;*/
+        box-shadow: 0 0 30px #ffffff;    
+    }
+.stats p
+    {
+        margin: 2px;
+    }
+.stats h3
+    {
+        margin: 7px;
+        text-align: center;
+        text-decoration: underline;
+    }
+.contact
+    {
+        background-color: #0a2a67;
+        color: #74d315;
+        /*margin: auto;*/
+    }
+.menu
+    {
+        list-style: none;
+        text-align: center;
+        font-size: 25px;
+        font-family: 'Oswald', sans-serif;
+        color: #000000;  
+        text-decoration: none; 
+        /*padding: 75rem;*/
+    }
+.menu li:first-child
+    {
+        display: block;
+    }
+.menu li
+    {
+        display: none;
+    }
+.menu a 
+    {
+        font-size: 25px;
+        font-family: 'Oswald', sans-serif;
+        background-color: #eeeedb;
+        text-align: center;
+        display: block;
+        padding: 5px;
+        color: #000000;  
+        text-decoration: none; 
+    }
+.responsive li
+    {
+        display: block;
+    }
+li a.active
+    {
+        background-color: #0a2a67;
+        color: #eeeedb;
+    }
+a:visited
+    {
+        color: #0a2a67;
+    }
+a:hover 
+    {
+        text-decoration: underline;
+        color: #74d315;
+    }
+a:active
+    {
+        background-color: #0a2a67;
+        color: #eeeedb;
+    }
+.motto
+    {
+        font-size: 20px;
+        font-family: 'Open Sans Condensed', sans-serif;
+        color: #eeeedb;
+        text-align: center;
+        margin: auto;
+    }
+
+
+/*.heroimg .articleimg
+    {
+        display: block;
+        margin: auto;
+    }*/
