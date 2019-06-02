@@ -68,6 +68,8 @@ nav
 article
     {
         background-color: #64b4e6;
+        margin: 0 auto;
+        max-width: 900px;
         width: 100%;
         padding: 10px;
         box-sizing: border-box;
@@ -83,7 +85,9 @@ footer p
         background-color: #0a2a67;
         color: #74d315;
         text-align: center;
-        height: auto;
+        margin: 0 auto;
+        max-width:900px;
+        width:100%;
         padding: 5px;
     }
 /*table
@@ -112,6 +116,9 @@ footer a
         background-color: #0a2a67;
         color: #74d315;
         text-align: center;
+        margin: 0 auto;
+        max-width: 900px;
+        width: 100%;
     }
 .prestonmap
     {
@@ -141,16 +148,22 @@ article .motto
         float: auto;
         height: 120px;
     }
-.herodiv
+    .heroimg
+    {
+        /*height: auto;*/
+        max-width: 600px;
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+    .herodiv
     {
         margin: auto;
         position: relative;
     }
-.heroimg
+.currentdate
     {
-        height: auto;
-        margin: auto;
-        width: 100%;
+        margin: 0 auto;
     }
 .stats
     {

@@ -37,7 +37,12 @@
   <main>
     <h2>Preston Idaho</h2>
     <div class="herodiv">
-      <img class="heroimg" src="images/hero.jpeg" alt="hero image">
+      <picture><source media="(max-width:700px)" 
+                srcset="images/hero-small.jpg 600w">
+                <source media="(min-width:701px)"
+                srcset="images/hero-large.jpg 2000w">
+                <img id="heroimg" src="images/hero-small.jpg" alt="hero image">
+        </picture>
       <section class="stats">
         <h3>Weather Summary</h3>
         <p>Currently: <span id="value1">Sunny</span></p>
@@ -67,7 +72,7 @@
     </table>
     </div>
     <article>
-        <img class="articleimg" src="images/articleimg.jpg" alt="article image">
+        <img class="articleimg" src="images/articleimg1.jpg" alt="article image">
         <h2>Article Title</h2>
         <h3 class="motto">by Author</h3>
         <p>Text for the article. Text for the article.
@@ -96,7 +101,11 @@
   </main>
   <footer>
     <p>©2019 The Idaho Weather Hub | Attributions | Michelle Church</p>
-      <p><script id="currentdate" src="js/currentdate.js"></script>
+      <p id="currentdate">
+        <script>
+          var today = new Date();
+          document.getElementById("currentdate").innerHTML = today.toDateString();
+      </script>
       </p>   
     <!--<a href="https://www.freepik.com/free-photos-vectors/icon">Icon vector created by freepik - www.freepik.com</a>-->
   </footer>
