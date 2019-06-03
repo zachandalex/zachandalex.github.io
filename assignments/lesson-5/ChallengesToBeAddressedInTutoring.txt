@@ -1,0 +1,7 @@
+Footer links - can't get the color to change so they don't show up.
+
+Large screen inline menu - can't get it to center and can't get it to be a solid background block.
+
+table - can't figure out how to center it on the page.
+
+When table hides in small mode I can't figure out how to get the 5 day forecast text to hide too.
