@@ -145,18 +145,23 @@ article .motto
     }
 .logo
     {
-        float: auto;
+        display: inline-block;
         height: 120px;
     }
-    .heroimg
+.title
+    {
+        display: inline-block;
+        vertical-align: top;
+    }
+#heroimg
     {
         /*height: auto;*/
-        max-width: 600px;
-        width: 90%;
+        /*max-width: 600px;*/
+        width: 100%;
         display: block;
         margin: 0 auto;
     }
-    .herodiv
+.herodiv
     {
         margin: auto;
         position: relative;

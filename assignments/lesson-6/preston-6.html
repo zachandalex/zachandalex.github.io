@@ -14,8 +14,8 @@
 
 <body>
   <header>
+    <img class="logo" src="images/cloud-with-sun.png" alt="cloud with sun peeking out">
     <div class="title">
-      <img class="logo" src="images/cloud-with-sun.PNG" alt="cloud with sun peeking out">
       <h1>Idaho Weather Hub</h1>
       <h3 class="motto">Blue skies and sunshine or majestic white covering the ground, we have something here for you.
       </h3>
@@ -37,12 +37,11 @@
   <main>
     <h2>Preston Idaho</h2>
     <div class="herodiv">
-      <picture><source media="(max-width:700px)" 
-                srcset="images/hero-small.jpg 600w">
-                <source media="(min-width:701px)"
-                srcset="images/hero-large.jpg 2000w">
-                <img id="heroimg" src="images/hero-small.jpg" alt="hero image">
-        </picture>
+      <picture>
+        <source media="(max-width:700px)" srcset="images/hero-small.jpg 600w">
+        <source media="(min-width:701px)" srcset="images/hero-large.jpg 2000w">
+        <img id="heroimg" src="images/hero-small.jpg" alt="hero image">
+      </picture>
       <section class="stats">
         <h3>Weather Summary</h3>
         <p>Currently: <span id="value1">Sunny</span></p>
@@ -53,60 +52,58 @@
       </section>
     </div>
     <div class="forecast">
-    <table>
       <h3>5 Day Forecast</h3>
-      <tr>
-        <th>Wed</th>
-        <th>Thu</th>
-        <th>Fri</th>
-        <th>Sat</th>
-        <th>Sun</th>
-      </tr>
-      <tr>
-        <td>89°F</td>
-        <td>87°F</td>
-        <td>78°F</td>
-        <td>75°F</td>
-        <td>72°F</td>
-      </tr>
-    </table>
+      <table>
+        <tr>
+          <th>Wed</th>
+          <th>Thu</th>
+          <th>Fri</th>
+          <th>Sat</th>
+          <th>Sun</th>
+        </tr>
+        <tr>
+          <td>89°F</td>
+          <td>87°F</td>
+          <td>78°F</td>
+          <td>75°F</td>
+          <td>72°F</td>
+        </tr>
+      </table>
     </div>
     <article>
-        <img class="articleimg" src="images/articleimg1.jpg" alt="article image">
-        <h2>Article Title</h2>
-        <h3 class="motto">by Author</h3>
-        <p>Text for the article. Text for the article.
-          Text for the article. Text for the article.
-          Text for the article. Text for the article.
-          Text for the article. Text for the article.
-          Text for the article. Text for the article.
-          Text for the article. Text for the article.
-          Text for the article. Text for the article.
-          Text for the article. Text for the article.
-          Text for the article. Text for the article.
-          Text for the article. Text for the article.
-          Text for the article. Text for the article.
-          Text for the article. Text for the article.
-        </p>
-      </article>
-      <section class="contact">
-        <h2>Contact Information</h2>
-        <p>Phone: (123)456-7890 <br>
-          Email: Preston@idaho.gov <br>
-          Address: 123 Preston Ave</p>
-          <div>
-          <img class="prestonmap" src="images/prestoncitymap.jpg" alt="Preston City Map">
-          </div>
-      </section>
+      <img class="articleimg" src="images/articleimg1.jpg" alt="article image">
+      <h2>Article Title</h2>
+      <h3 class="motto">by Author</h3>
+      <p>Text for the article. Text for the article.
+        Text for the article. Text for the article.
+        Text for the article. Text for the article.
+        Text for the article. Text for the article.
+        Text for the article. Text for the article.
+        Text for the article. Text for the article.
+        Text for the article. Text for the article.
+        Text for the article. Text for the article.
+        Text for the article. Text for the article.
+        Text for the article. Text for the article.
+        Text for the article. Text for the article.
+        Text for the article. Text for the article.
+      </p>
+    </article>
+    <section class="contact">
+      <h2>Contact Information</h2>
+      <p>Phone: (123)456-7890 <br>
+        Email: Preston@idaho.gov <br>
+        Address: 123 Preston Ave</p>
+      <div>
+        <img class="prestonmap" src="images/prestoncitymap.JPG" alt="Preston City Map">
+      </div>
+    </section>
   </main>
   <footer>
     <p>©2019 The Idaho Weather Hub | Attributions | Michelle Church</p>
-      <p id="currentdate">
-        <script>
-          var today = new Date();
-          document.getElementById("currentdate").innerHTML = today.toDateString();
+    <p id="currentdate">
+      <script src="js/currentdate.js">
       </script>
-      </p>   
+    </p>
     <!--<a href="https://www.freepik.com/free-photos-vectors/icon">Icon vector created by freepik - www.freepik.com</a>-->
   </footer>
 </body>
