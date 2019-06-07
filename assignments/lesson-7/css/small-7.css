@@ -2,7 +2,8 @@
     {box-sizing: border-box;}
 header
     {
-        display: block;
+        display: flex;
+        justify-content: center;
         font-size: 45px;
         font-family: 'Oswald', sans-serif;
         background-color: #0a2a67;
@@ -63,7 +64,8 @@ nav
         padding: 5px;
         background-color: #eeeedb;
         color: black;
-        display: inline-block;
+        display: flex;
+        justify-content: center;
     }
 article
     {
@@ -80,6 +82,8 @@ article h2
     }
 footer p
     {
+        display: flex;
+        justify-content: center;
         font-size: 25px;
         font-family: 'Oswald', sans-serif;
         background-color: #0a2a67;
@@ -114,7 +118,8 @@ footer a
     }
 .contact p
     {
-        display: block;
+        display: flex;
+        justify-content: center;
         background-color: #0a2a67;
         color: #74d315;
         text-align: center;
