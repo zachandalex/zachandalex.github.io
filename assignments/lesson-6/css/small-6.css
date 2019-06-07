@@ -108,11 +108,13 @@ footer a
     }
 .contact h2
     {
+        display: block;
         background-color: #0a2a67;
         color: #74d315;
     }
 .contact p
     {
+        display: block;
         background-color: #0a2a67;
         color: #74d315;
         text-align: center;
