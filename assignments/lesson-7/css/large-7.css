@@ -73,7 +73,7 @@
       max-width: 900px;
       width: 100%;
     }
-div > .images img:hover
+div > .images:hover
     {
       box-shadow: 0 0 40px black; 
     }
