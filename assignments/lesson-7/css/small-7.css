@@ -178,6 +178,7 @@ article .motto
 .stats p
     {
         margin: 2px;
+        max-height: 75%;
     }
 .stats h3
     {

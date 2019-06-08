@@ -28,7 +28,7 @@
       }
     .prestonmap
     {
-        display: block;
+        display: flex;
         position: relative;
         max-width: 300px;
         width: auto;
