@@ -43,7 +43,6 @@ main
 
 ul
     {
-        /*position: fixed;*/
         list-style-type: none;
         margin: auto;
         padding: 0;
@@ -94,14 +93,6 @@ footer p
         width:100%;
         padding: 5px;
     }
-/*table
-    {
-        display: none;
-    }
-table h3
-    {
-        display:none;
-    }*/
 footer a
     {
         color: #74d315;
@@ -146,8 +137,6 @@ article .motto
         max-width: 600px;
         display: block;
         margin: 0 auto;
-        /*height: auto;*/
-        /*padding: 10px;*/
         width: 90%;
     }
 .logo
@@ -162,11 +151,9 @@ article .motto
     }
 #heroimg
     {
-        /*height: auto;*/
-        /*max-width: 600px;*/
-        width: 100%;
-        display: block;
+        display: flex;
         margin: 0 auto;
+        width: 100%;
     }
 .herodiv
     {
@@ -186,7 +173,6 @@ article .motto
         max-height: 75%;
         background: #64b4e6;
         border: 1px solid #eeeedb;
-        /*padding: 1.5rem;*/
         box-shadow: 0 0 30px #ffffff;    
     }
 .stats p
@@ -203,7 +189,6 @@ article .motto
     {
         background-color: #0a2a67;
         color: #74d315;
-        /*margin: auto;*/
     }
 .menu
     {
@@ -213,7 +198,6 @@ article .motto
         font-family: 'Oswald', sans-serif;
         color: #000000;  
         text-decoration: none; 
-        /*padding: 75rem;*/
     }
 .menu li:first-child
     {
@@ -265,10 +249,18 @@ a:active
         text-align: center;
         margin: auto;
     }
-
-
-/*.heroimg .articleimg
+.gallery
     {
-        display: block;
-        margin: auto;
-    }*/
+        display: grid;
+        margin: 0 auto;
+        width: 100%;
+    }
+.images img
+    {
+        width: 100%;
+    }
+figcaption
+    {
+      text-align: center;
+      margin: 0;
+    }

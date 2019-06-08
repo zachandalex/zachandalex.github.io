@@ -1,4 +1,4 @@
-@media screen and (min-width: 700px) 
+@media screen and (min-width: 1000px) 
 {
  nav
   {
@@ -30,7 +30,6 @@
     {
         display: block;
         position: relative;
-        /*margin: auto;*/
         max-width: 300px;
         width: auto;
     }
@@ -40,7 +39,6 @@
         width: fit-content;
         margin: auto;
         text-align: center;
-        /*position: relative;*/
         border-collapse: collapse;
       }
     table
@@ -68,6 +66,17 @@
         height: 60px;
         padding: 0;
     }
-     
+.gallery
+    {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      max-width: 900px;
+      width: 100%;
+    }
+div > .images img:hover
+    {
+      box-shadow: 0 0 40px black; 
+    }
+
 
 } 
