@@ -43,6 +43,8 @@ main
 
 ul
     {
+        display: flex;
+        justify-content: center;
         list-style-type: none;
         margin: auto;
         padding: 0;
@@ -63,7 +65,7 @@ nav
         padding: 5px;
         background-color: #eeeedb;
         color: black;
-        display: flex;
+        
         justify-content: center;
     }
 article
@@ -265,7 +267,7 @@ figcaption
       text-align: center;
       margin: 0;
     }
-div > .images img:hover
+/*div > .images img:hover
     {
       box-shadow: 0 0 40px black; 
-    }
+    }*/
