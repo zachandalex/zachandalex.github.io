@@ -40,7 +40,6 @@ main
         max-width: 900px;
         margin:0 auto; 
     }
-
 ul
     {
         display: flex;
@@ -85,13 +84,13 @@ footer p
     {
         display: flex;
         justify-content: center;
-        font-size: 25px;
+        font-size: 15px;
         font-family: 'Oswald', sans-serif;
         background-color: #0a2a67;
         color: #74d315;
         text-align: center;
         margin: 0 auto;
-        max-width:900px;
+        /*max-width:900px;*/
         width:100%;
         padding: 5px;
     }
@@ -99,9 +98,95 @@ footer a
     {
         color: #74d315;
     }
+/*-------------FORM-------------*/
+form fieldset
+    {
+        border: 2px ridge #0a2a67;
+        font-family: 'Oswald', sans-serif;
+        border-radius: 5px;
+        padding: 8px;
+        font-size: 20px;
+        margin: 10px;
+    }
+form legend
+    {
+        color: #eeeedb;
+        background-color: #0a2a67;
+        padding: 4px;
+    }
+form label.sbs
+    {
+        display: block;
+        padding: 5px 0;
+    }
+form label.top, form div
+    {
+        display: block;
+        padding-top: 1rem;
+        font-size: 15px;
+    }
+form label.top input, form label.top select
+    {
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        padding: .75rem;
+        border-radius: 5px;
+        border: 1px solid #0a2a67;
+        background: #eeeedb;
+    }
+form label.top input:required
+    {
+        border-left:orangered solid 5px;
+    }
+form label.top input:required:valid
+    {
+        border-left: #74d315 solid 5px;
+    }
+form input.submitBtn
+    {
+        padding: .75rem 1.5rem;
+        margin: 20px 0 5px 0;
+        color: #eeeedb;
+        background-color: #0a2a67; 
+        border-radius: 5px;
+        border: none;
+    }
+.danger
+    {
+        font-size: 15px;
+    }
+.thanks
+    {
+        font-family: 'Oswald', sans-serif;
+        font-size: 25px;
+        text-align: center;
+        width: 100%;
+        padding: 15px;
+        background-color: #eeeedb;
+        color: #0a2a67;
+        margin: 0 auto;
+    }
+/*-------------END FORM-------------*/
+.lightning
+    {
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        width: 90%;
+    }
 .forecast
     {
         display: none;
+    }
+    
+.contact
+    {
+        display: block;
+        /*justify-content: center;*/
+        background-color: #0a2a67;
+        color: #74d315;
+        width: 100%;
     }
 .contact h2
     {
@@ -117,17 +202,24 @@ footer a
         color: #74d315;
         text-align: center;
         margin: 0 auto;
-        max-width: 900px;
+        /*max-width: 900px;*/
         width: 100%;
     }
-.prestonmap
+.contact img
+    {
+        display: block;
+        margin: 0 auto;
+        padding: 20px;
+        width: 100%;
+    }
+/*.prestonmap
     {
         max-width: 600px;
         display: block;
         margin:0 auto;
         width: 90%;
         padding-bottom: 20px;
-    }
+    }*/
 article .motto
     {
         text-align: left;
@@ -188,11 +280,7 @@ article .motto
         text-align: center;
         text-decoration: underline;
     }
-.contact
-    {
-        background-color: #0a2a67;
-        color: #74d315;
-    }
+
 .menu
     {
         list-style: none;

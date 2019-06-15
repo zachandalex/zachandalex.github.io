@@ -30,19 +30,27 @@
             <li><a href="preston-8.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
-            <li><a href="stormcenter.html">Storm Center</a></li>
-            <li><a class="active" href="gallery-8.html">Gallery</a></li>
+            <li><a class="active" href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-8.html">Gallery</a></li>
         </ul>
     </nav>
     <main>
         <h2>Storm Center</h2>
+        <img class="lightning" src="images/weather-assets/Optimized/lightning750.jpg">
         <form method="get" action="thanks.html">
-            <label>Full Name * <input type="text" name="fullname" required pattern="[A-Za-z] {5, }"
-                    placeholder="5 or more alpha characters"></label>
-            <label>Email Address <input type="email" name="email" placeholder="someone@gmail.com"></label>
-            <label>Phone Number * <input type="tel" name="phone" required placeholder="1235551234"></label>
-            <label>Zip Code * <input type="number" name="zip" required></label>
-            <label>Storm Type <input list="storms" name="storms"></label>
+            <fieldset>
+                <legend>Reporter Information</legend>
+                <label class="top">Full Name * <input type="text" name="fullname" required minlength="5" maxlength="" 
+                        placeholder="5 or more alpha characters"></label>
+                <label class="top">Email Address <input type="email" name="email"
+                        placeholder="someone@gmail.com"></label>
+                <label class="top">Phone Number * <input type="tel" name="phone" required
+                        placeholder="1235551234"></label>
+                <label class="top">Zip Code * <input type="number" name="zip" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label class="top">Storm Type <input list="storms" name="storms"></label>
                 <datalist id="storms">
                     <option value="Flash Flood">
                     <option value="Hail">
@@ -50,8 +58,26 @@
                     <option value="Thunderstorm">
                     <option value="Tornado">
                 </datalist>
-            <label>Storm Severity <input type="range" name="severity"></label>
-            
+                <label class="top">Storm Severity (1-10) </label>
+                <input type="range" name="severity" id="rating" value="5" min="1" max="10" step="1"
+                    oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span class="danger" id="ratingvalue">5</span>
+                <label class="top">Storm Region
+                    <select name="region">
+                        <option value="">Select Region ...</option>
+                        <option value="preston">Preston</option>
+                        <option value="sugar">Sugar City</option>
+                        <option value="fish">Fish Haven</option>
+                    </select>
+                </label>
+                <div>User In-danger Level</div>
+                <label class="sbs danger"><input type="radio" name="danger" value="yes">Yes </label>
+                <label class="sbs danger"><input type="radio" name="danger" value="maybe">Maybe </label>
+                <label class="sbs danger"><input type="radio" name="danger" value="no">No </label>
+                <label class="top" id="info">Additional Information or Comments <input type="textarea"
+                        name="comments"></label>
+                <label><input type="submit" value="Submit Storm Information" class="submitBtn"></label>
+            </fieldset>
         </form>
 
         <section class="contact">
@@ -74,7 +100,10 @@
     </script>
     <script src="js/hamburger.js">
     </script>
-    <script src="js/windchill.js"></script>
+    <script src="js/windchill.js">
+    </script>
+    <script src="js/adjustRating.js">
+    </script>
 </body>
 
 </html>
