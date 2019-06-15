@@ -207,7 +207,8 @@ form input.submitBtn
     }
 .contact img
     {
-        display: block;
+        /*display: block;*/
+        display: flex;
         margin: 0 auto;
         padding: 20px;
         width: 100%;

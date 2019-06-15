@@ -40,7 +40,7 @@
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Reporter Information</legend>
-                <label class="top">Full Name * <input type="text" name="fullname" required minlength="5" maxlength="" 
+                <label class="top">Full Name * <input type="text" name="fullname" required pattern="[A-Za-z ]{5,}"
                         placeholder="5 or more alpha characters"></label>
                 <label class="top">Email Address <input type="email" name="email"
                         placeholder="someone@gmail.com"></label>
