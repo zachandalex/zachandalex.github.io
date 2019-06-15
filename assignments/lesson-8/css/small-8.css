@@ -135,6 +135,10 @@ form label.top input, form label.top select
         border: 1px solid #0a2a67;
         background: #eeeedb;
     }
+/*form label.top input:active, form label.top select:active
+    {
+       border: 2px dashed #0a2a67;
+    }*/
 form label.top input:required
     {
         border-left:orangered solid 5px;
