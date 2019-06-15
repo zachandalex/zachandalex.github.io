@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Idaho Weather Hub - Gallery</title>
+    <meta name="description" content="Idaho Weather Hub - Weather Gallery">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-8.css">
+    <link rel="stylesheet" href="css/medium-8.css">
+    <link rel="stylesheet" href="css/large-8.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300%7COswald&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/cloud-with-sun.png" alt="cloud with sun peeking out">
+        <div class="title">
+            <h1>Idaho Weather Hub</h1>
+            <h3 class="motto">Blue skies and sunshine or white snow covering the ground, there is something here for
+                you.
+            </h3>
+        </div>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="preston-8.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a class="active" href="gallery-8.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Storm Center</h2>
+        <form method="get" action="thanks.html">
+            <label>Full Name * <input type="text" name="fullname" required pattern="[A-Za-z] {5, }"
+                    placeholder="5 or more alpha characters"></label>
+            <label>Email Address <input type="email" name="email" placeholder="someone@gmail.com"></label>
+            <label>Phone Number * <input type="tel" name="phone" required placeholder="1235551234"></label>
+            <label>Zip Code * <input type="number" name="zip" required></label>
+            <label>Storm Type <input list="storms" name="storms"></label>
+                <datalist id="storms">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+            <label>Storm Severity <input type="range" name="severity"></label>
+            
+        </form>
+
+        <section class="contact">
+            <h2>Contact Information</h2>
+            <p>Phone: (123)456-7890 <br>
+                Email: Preston@idaho.gov <br>
+                Address: 123 Preston Ave</p>
+            <div>
+                <img class="prestonmap" src="images/prestoncitymap.jpg" alt="Preston City Map">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©2019 The Idaho Weather Hub | Attributions | Michelle Church</p>
+        <p id="currentdate">
+        </p>
+        <!--<a href="https://www.freepik.com/free-photos-vectors/icon">Icon vector created by freepik - www.freepik.com</a>-->
+    </footer>
+    <script src="js/currentdate.js">
+    </script>
+    <script src="js/hamburger.js">
+    </script>
+    <script src="js/windchill.js"></script>
+</body>
+
+</html>
