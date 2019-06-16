@@ -42,8 +42,8 @@ main
     }
 ul
     {
-        display: flex;
-        justify-content: center;
+        /*display: flex;
+        justify-content: center;*/
         list-style-type: none;
         margin: auto;
         padding: 0;
@@ -64,8 +64,7 @@ nav
         padding: 5px;
         background-color: #eeeedb;
         color: black;
-        
-        justify-content: center;
+        display: inline-block;
     }
 article
     {
@@ -209,22 +208,21 @@ form input.submitBtn
         /*max-width: 900px;*/
         width: 100%;
     }
-.contact img
+/*.contact img
     {
-        /*display: block;*/
+        /*display: block;
+        display: flex;
+        margin: 0 auto;
+        padding: 20px;
+        width: 100%;
+    }*/
+.prestonmap
+    {
         display: flex;
         margin: 0 auto;
         padding: 20px;
         width: 100%;
     }
-/*.prestonmap
-    {
-        max-width: 600px;
-        display: block;
-        margin:0 auto;
-        width: 90%;
-        padding-bottom: 20px;
-    }*/
 article .motto
     {
         text-align: left;
