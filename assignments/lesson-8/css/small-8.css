@@ -124,7 +124,7 @@ form label.top, form div
         padding-top: 1rem;
         font-size: 15px;
     }
-form label.top input, form label.top select
+form label.top input, form label.top select, textarea
     {
         display: block;
         width: 100%;
@@ -133,6 +133,11 @@ form label.top input, form label.top select
         border-radius: 5px;
         border: 1px solid #0a2a67;
         background: #eeeedb;
+    }
+textarea
+    {
+        padding: 0;
+        /*padding-top: 1rem;*/
     }
 /*form label.top input:active, form label.top select:active
     {

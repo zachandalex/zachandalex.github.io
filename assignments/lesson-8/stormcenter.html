@@ -36,7 +36,7 @@
     </nav>
     <main>
         <h2>Storm Center</h2>
-        <img class="lightning" src="images/weather-assets/Optimized/lightning750.jpg">
+        <img class="lightning" src="images/weather-assets/Optimized/lightning750.jpg" alt="lightning over a mountain">
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Reporter Information</legend>
@@ -74,8 +74,8 @@
                 <label class="sbs danger"><input type="radio" name="danger" value="yes">Yes </label>
                 <label class="sbs danger"><input type="radio" name="danger" value="maybe">Maybe </label>
                 <label class="sbs danger"><input type="radio" name="danger" value="no">No </label>
-                <label class="top" id="info">Additional Information or Comments <input type="textarea"
-                        name="comments"></label>
+                <div>Additional Information or Comments</div>
+                <label class="sbs" id="info"><textarea name="comments" rows="10" cols="40"></textarea></label>
                 <label><input type="submit" value="Submit My Storm Report" class="submitBtn"></label>
             </fieldset>
         </form>
