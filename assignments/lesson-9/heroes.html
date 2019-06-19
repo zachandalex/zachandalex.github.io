@@ -13,25 +13,25 @@
 
 <body>
 
-    <header>
+    <header class="hero">
 
     </header>
 
-    <section>
+    <section class="hero">
 
     </section>
     <!--This is the JavaScript code-->
     <script>
         /*This is calling the JSON*/
-        var header = document.querySelector('header');
-        var section = document.querySelector('section');
+        var header = document.querySelector('header.hero');
+        var section = document.querySelector('section.hero');
         var requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
         var request = new XMLHttpRequest();
         request.open('GET', requestURL);
         request.responseType = 'json';
         request.send();
         /*This is waiting for the response to return from the server and then dealing with it*/
-        request.onload = function () 
+        request.onload = function() 
         {
             var superHeroes = request.response;
             populateHeader(superHeroes);
