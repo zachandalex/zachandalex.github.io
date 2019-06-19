@@ -96,8 +96,23 @@
     function showMotto(jsonObj)
       {
         var towns = jsonObj['towns'];
-        for (var i=0; i < towns.length; i++)
-          {
+        var townNames = ["Fish Haven","Soda Springs", "Preston"]
+        var i = 0;
+        var output = [];
+            while (i < towns.length)
+              {
+                if (townNames[i]==towns)
+                {
+                    output.push(i);
+                    ++i;
+                }
+                else
+                {
+                    ++i;
+                }
+              }
+            return output;
+
             var myArticle = document.createElement('article');
             /*town name*/
             var myH2 = document.createElement('h2');
@@ -135,7 +150,7 @@
 
             section.appendChild(myArticle);
           }
-      }
+      
   </script>
 </body>
 
