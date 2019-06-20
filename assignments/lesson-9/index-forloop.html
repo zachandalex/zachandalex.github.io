@@ -97,22 +97,14 @@
       {
         var towns = jsonObj['towns'];
         var townNames = ["Fish Haven","Soda Springs", "Preston"]
-        var i = 0;
         var output = [];
-            while (i < towns.length)
-              {
-                if (townNames[i]==towns)
+            for (var i=0; i < towns.length; i++) {
+              for (var x = 0; x<townNames.length; x++){
+                if (towns[i].name==townNames[x])
                 {
-                    output.push(i);
-                    ++i;
-                }
-                else
-                {
-                    ++i;
-                }
-              }
-            return output;
-
+                    output.push(towns[i]);
+   
+             
             var myArticle = document.createElement('article');
             /*town name*/
             var myH2 = document.createElement('h2');
@@ -150,6 +142,10 @@
 
             section.appendChild(myArticle);
           }
+              }
+            }
+          }
+
       
   </script>
 </body>
