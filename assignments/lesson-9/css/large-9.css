@@ -79,7 +79,7 @@
       margin: auto;
       grid-template-columns: 1fr 1fr 1fr;
       max-width: 900px;
-      width: 100%;
+      width: 95%;
     }
 div > .images:hover
     {
