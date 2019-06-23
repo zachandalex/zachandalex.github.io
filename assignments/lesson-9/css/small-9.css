@@ -187,7 +187,38 @@ form input.submitBtn
     {
         display: none;
     }
-    
+/*homepage town stats*/
+.townstats article, .townstats img, .townstats article p, .townstats article h2, .townstats article h3
+    {
+        display: grid;
+        margin: 0 auto;
+        padding: 5px;
+        text-align: center;
+        max-width: 900px;
+        width: 100%;
+        background-color:#eeeedb;
+    }
+.townstats article
+    {
+        border: 1px solid #0a2a67;
+        border-collapse: collapse;
+        padding: 5px;
+        margin: 0 auto;
+    }
+.townstats p
+    {
+        margin: 2px;
+        max-height: 75%;
+    }
+.townstats h3
+    {
+        margin: 7px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+/*homepage town stats*/
 .contact
     {
         display: block;

@@ -73,6 +73,14 @@
       max-width: 900px;
       width: 100%;
     }
+.townstats
+    {
+      display: grid;
+      margin: auto;
+      grid-template-columns: 1fr 1fr 1fr;
+      max-width: 900px;
+      width: 100%;
+    }
 div > .images:hover
     {
       box-shadow: 0 0 40px black; 
