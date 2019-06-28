@@ -1,0 +1,19 @@
+{
+    "id": 5061036,
+    "name": "Preston",
+    "country": "US",
+    "coord": {
+      "lon": -97.218697,
+      "lat": 47.312199
+    }
+
+     {
+    "id": 5607916,
+    "name": "Soda Springs",
+    "country": "US",
+    "coord": {
+      "lon": -111.604668,
+      "lat": 42.654369
+    }
+
+    
