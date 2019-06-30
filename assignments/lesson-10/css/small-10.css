@@ -371,6 +371,10 @@ a:active
         background-color: #0a2a67;
         color: #eeeedb;
     }
+footer p a.visited
+{
+    color: #eeeedb;
+}
 .motto
     {
         font-size: 20px;
