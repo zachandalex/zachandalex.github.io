@@ -17,7 +17,7 @@ forecastRequest.onload = function () {
             wicon.push(weatherData.list[i].weather[0].icon);
             wtemp.push(weatherData.list[i].main.temp);
             wdesc.push(weatherData.list[i].weather[0].description);
-            day.push(weatherData.list[i].dt);
+            day.push(weatherData.list[i].dt_txt);
         }
     }
 
@@ -47,7 +47,7 @@ forecastRequest.onload = function () {
     let desc05 = wdesc[4];
 
     document.getElementById("day1").innerHTML = day01;
-    document.getElementById("image1").setAttribute("src", "http://openweathermap.org/img/w/" + img01 + ".png");
+    document.getElementById("image1").setAttribute("src", "http://openweathermap.org/img/w/"+img01+".png");
     document.getElementById("image1").setAttribute("alt", desc01);
     document.getElementById("temp1").innerHTML = temp01.toFixed(0) + "&deg;F";
     document.getElementById("day2").innerHTML = day02;

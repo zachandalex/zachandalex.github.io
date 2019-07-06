@@ -1,6 +1,0 @@
-<picture><source media="(max-width:700px)" 
-                srcset="images/500px article-small.jpg">
-                <source media="(min-width:701px)"
-                srcset="images/1280px article-large.jpg">
-                <img id="heroimg" src="500px article-small.jpg" alt="hero image">
-        </picture>

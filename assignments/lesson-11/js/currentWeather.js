@@ -8,7 +8,11 @@ weatherRequest.onload = function()
         let weatherData = JSON.parse(weatherRequest.responseText);
         console.log(weatherData);
         document.getElementById("condition").innerHTML=weatherData.weather[0].description;
-        parseInt(document.getElementById("high").innerHTML=weatherData.main.temp_max);
+        var tHigh = parseInt(document.getElementById("high").innerHTML=weatherData.main.temp_max);
         parseInt(document.getElementById("humidity").innerHTML=weatherData.main.humidity);
-        parseInt(document.getElementById("speed").innerHTML=weatherData.wind.speed);
+        var sSpeed = parseInt(document.getElementById("speed").innerHTML=weatherData.wind.speed);
+        var fWindchill = 35.74 + (0.6215*tHigh)-(35.75*Math.pow(sSpeed, 0.16))+(0.4275*tHigh*Math.pow(sSpeed,0.16));
+        document.getElementById("windchill").innerHTML = fWindchill.toFixed(0);
     }
+
+    

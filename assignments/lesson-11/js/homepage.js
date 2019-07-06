@@ -10,20 +10,6 @@ request.onload = function () {
     var townstats = request.response;
     /*populateHeader(townstats);*/
     showTownstats(townstats);
-    /*an example of this same string using raw json text and parsing it to convert to an actual 
-      javascript object
-          
-      request.open('GET', requestURL);
-      request.responseType = 'text' //now we're getting a string
-      request.send();
-
-      request.onload = function() 
-      {
-          var supreHeroesText = request.response; //get the string from the response
-          var superHeroes = JSON.parse(superHeroesText); //convert it to an object
-          populateHeader(superHeroes);
-          showHeroes(superHeroes); 
-      } */
 }
 function showTownstats(jsonObj) {
     var towns = jsonObj['towns'];
@@ -31,7 +17,25 @@ function showTownstats(jsonObj) {
     for (var i = 0; i < towns.length; i++) {
         for (var x = 0; x < townNames.length; x++) {
             if (towns[i].name == townNames[x]) {
-                /*output.push(towns[i]);*/
+                var myImg = document.createElement('img');
+                if (towns[i].name == 'Preston') {
+                    myImg.setAttribute('src', 'images/preston-750.jpg');
+                    myImg.setAttribute('alt', 'Preston, Idaho');
+                }
+                else if (towns[i].name == "Soda Springs") {
+                    myImg.setAttribute('src', 'images/soda-springs-750.jpg');
+                    myImg.setAttribute('alt', 'Soda Springs, Idaho');
+                }
+                else if (towns[i].name == "Fish Haven") {
+                    myImg.setAttribute('src', 'images/fish-haven-750.jpg');
+                    myImg.setAttribute('alt', 'Fish Haven, Idaho');
+                }
+                else {
+                    myImg.setAttribute('src', 'images/clouds-750.jpg');
+                    myImg.setAttribute('alt', 'Idaho');
+                }
+
+                /*Create article element*/
                 var myArticle = document.createElement('article');
                 /*town name*/
                 var myH2 = document.createElement('h2');
@@ -42,30 +46,20 @@ function showTownstats(jsonObj) {
                 var myPara2 = document.createElement('p');
                 var myPara3 = document.createElement('p');
                 var myPara4 = document.createElement('p');
-                /*events*/
-                //var myList = document.createElement('ul');
 
                 myH2.textContent = towns[i].name;
                 myH3.textContent = towns[i].motto;
                 myPara1.textContent = 'Year Founded: ' + towns[i].yearFounded;
                 myPara2.textContent = 'Population: ' + towns[i].currentPopulation;
                 myPara3.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
-                /*myPara4.textContent = 'Events: ';
 
-                var events = towns[i].events;
-                for (var j = "0"; j < towns.length; j++) {
-                    var listItem = document.createElement('li');
-                    listItem.textContent = events[j];
-                    myList.appendChild(listItem);
-                }*/
+                myArticle.appendChild(myImg);
                 myArticle.appendChild(myH2);
                 myArticle.appendChild(myH3);
                 myArticle.appendChild(myPara1);
                 myArticle.appendChild(myPara2);
                 myArticle.appendChild(myPara3);
                 myArticle.appendChild(myPara4);
-                //myArticle.appendChild(myList);
-
                 section.appendChild(myArticle);
             }
         }
