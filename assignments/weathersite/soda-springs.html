@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Idaho Weather Hub - Soda Springs</title>
+    <meta name="description" content="Idaho Weather Hub - Soda Springs, Idaho">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300%7COswald&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/cloud-with-sun.png" alt="cloud with sun peeking out">
+        <div class="title">
+            <h1>Idaho Weather Hub</h1>
+            <h3 class="motto">Blue skies and sunshine or white snow covering the ground, there is something here for
+                you.
+            </h3>
+        </div>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a class="active" href="soda-springs.html">Soda Springs</a></li>
+            <li><a href="fish-haven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 id="town">Soda Springs</h2>
+        <div class="herodiv">
+            <figure class="heroimgclass">
+                <img id="heroimg" src="images/soda-springs-750.jpg" alt="Soda Springs">
+            </figure>
+            <section class="stats">
+                <h3>Weather Summary</h3>
+                <p>Currently: <span id="condition"></span></p>
+                <p>High: <span id="high"></span>° F</p>
+                <p>Wind Chill: <span id="windchill"></span>° F</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="speed"></span> mph</p>
+            </section>
+            <p>Weather data provided by <a href="https://openweathermap.org/"> openweathermap.org</a></p>
+        </div>
+        <div class="forecast">
+            <h3>5 Day Forecast</h3>
+            <table>
+                <tr>
+                    <th><span id="day1"></span></th>
+                    <th><span id="day2"></span></th>
+                    <th><span id="day3"></span></th>
+                    <th><span id="day4"></span></th>
+                    <th><span id="day5"></span></th>
+                </tr>
+                <tr>
+                    <td><img id="image1" src="images/filler_img.png" alt="filler"></td>
+                    <td><img id="image2" src="images/filler_img.png" alt="filler"></td>
+                    <td><img id="image3" src="images/filler_img.png" alt="filler"></td>
+                    <td><img id="image4" src="images/filler_img.png" alt="filler"></td>
+                    <td><img id="image5" src="images/filler_img.png" alt="filler"></td>
+                </tr>
+                <tr>
+                    <td><span id="temp1"></span></td>
+                    <td><span id="temp2"></span></td>
+                    <td><span id="temp3"></span></td>
+                    <td><span id="temp4"></span></td>
+                    <td><span id="temp5"></span></td>
+                </tr>
+            </table>
+        </div>
+        <article>
+            <img class="articleimg" src="images/article-750.jpg" alt="article image">
+            <h2>Text (SMS) to 9-1-1 Now Available to Many in Caribou County</h2>
+            <h3 class="motto">SODA SPRINGS, ID</h3>
+            <p>Most citizens in Caribou County can now send a short message service (SMS) text message to 911 for
+                emergency help when unable to make a 911 voice call. This new public safety service has been brought to
+                Caribou County by Sheriff Kelly Wells and is available to wireless customers of AT&T, T-Mobile, and
+                Verizon Wireless cell phones.</p>
+
+                <p>Text-to-911 was not developed as a replacement to a voice call to 911 in an emergency situation, but
+                rather as an enhancement to reach 911 services in certain situations:
+
+                The caller is hearing/voice impaired; a medical emergency renders the person incapable of speech; when
+                speaking out loud would put the caller in danger, such as a home invasion, a domestic violence incident,
+                or an active shooter scenario; and/or when on the edge of the cellular network where there might not be
+                voice coverage, but text can get through. When in an emergency situation, all wireless callers should
+                remember to “Call 911 if you can; Text 911 if you can’t.”</p>
+
+                <p>Caribou County citizens should keep the following important information in mind if they send a
+                text-to-911:
+
+                Customers should use the texting option only when calling 911 is not an option. <a
+                    href="https://mylocalradio.com/text-sms-to-9-1-1-now-available-to-many-in-caribou-county/">Continue
+                    to full article.</a></p>
+        </article>
+        <section class="events">
+                <h2>What's happening in Soda Springs</h2>
+        </section>
+        <section class="contact">
+            <h2>Contact Information</h2>
+            <p>Phone: (123)456-7890 <br>
+                Email: sodasprings@idaho.gov <br>
+                Address: 123 Soda Lane</p>
+            <div>
+                <img class="prestonmap" src="images/prestoncitymap.jpg" alt="Preston City Map">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©2019 The Idaho Weather Hub | Michelle Church</p>
+        <p id="currentdate">
+        </p>
+        <!--<a href="https://www.freepik.com/free-photos-vectors/icon">Icon vector created by freepik - www.freepik.com</a>-->
+    </footer>
+
+    <script src="js/currentdate.js">
+    </script>
+    <script src="js/hamburger.js">
+    </script>
+    <script src="js/currentWeather-sodasprings.js">
+    </script>
+    <script src="js/events.js">
+    </script>
+    <script src="js/forecast_sodasprings.js">
+    </script>
+</body>
+
+</html>
