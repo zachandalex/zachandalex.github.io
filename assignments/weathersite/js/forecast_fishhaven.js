@@ -21,6 +21,9 @@ forecastRequest.onload = function () {
         }
     }
 
+    var now = new Date();
+    var dayOfWeek = now.getDay();
+
     let day01 = day[0];
     let img01 = wicon[0];
     let temp01 = wtemp[0];

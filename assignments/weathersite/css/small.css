@@ -79,6 +79,10 @@ article h2
     {
         text-align: left;
     }
+article h4
+    {
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
 footer p
     {
         display: flex;
@@ -383,6 +387,22 @@ footer p a.visited
         text-align: center;
         margin: auto;
     }
+.events
+    {
+        background-color: #64b4e6;
+    }
+.events li
+    {
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 20px;
+        padding: 2px;
+    }
+.events h2
+    {
+        margin: 0;
+        text-align: left;
+        padding-left: 10px;
+    }
 .gallery
     {
         display: grid;
@@ -398,7 +418,8 @@ figcaption
       text-align: center;
       margin: 0;
     }
-/*div > .images img:hover
+#openweathermap
     {
-      box-shadow: 0 0 40px black; 
-    }*/
+        text-align: center;
+        font-family: 'Open Sans Condensed', sans-serif;
+    }

@@ -16,17 +16,17 @@ function showEvents(jsonObj) {
         for (var x = 0; x < townNames.length; x++) {
             if (towns[i].name == townNames[x]) {
                 var myArticle = document.createElement('article');
-                var myH2 = document.createElement('h2');
+                var myH3 = document.createElement('h3');
                 var myPara1 = document.createElement('p');
                 var myList = document.createElement('ul');
-                myH2.textContent = 'Events: ';
+                myH3.textContent = 'Events: ';
                 var events = towns[i].events;
                 for (var j = "0"; j < towns.length; j++) {
                     var listItem = document.createElement('li');
                     listItem.textContent = events[j];
                     myList.appendChild(listItem);
                 }
-                myArticle.appendChild(myH2);
+                myArticle.appendChild(myH3);
                 myArticle.appendChild(myList);
 
                 section.appendChild(myArticle);
