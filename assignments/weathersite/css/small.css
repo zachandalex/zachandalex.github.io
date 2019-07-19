@@ -195,7 +195,7 @@ form input.submitBtn
 .townstats article, .townstats img, .townstats article p, .townstats article h2, .townstats article h3
     {
         display: grid;
-        margin: 0 auto;
+        margin: auto;
         padding: 5px;
         text-align: center;
         max-width: 900px;

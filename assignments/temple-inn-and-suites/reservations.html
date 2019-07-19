@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+    <title>The Temple Inn & Suites - Home</title>
+    <meta name='description' content='The Temple Inn & Suites Home Page'>
+    <link rel='stylesheet' href='css/normalize.css'>
+    <link rel='stylesheet' href='css/small.css'>
+    <link rel='stylesheet' href='css/medium.css'>
+    <link rel='stylesheet' href='css/large.css'>
+    <link
+        href="https://fonts.googleapis.com/css?family=DM+Sans|Domine|Hind+Siliguri|Lora|Merriweather+Sans|Raleway|Tinos|Vollkorn|Great+Vibes&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/templeicon.png" alt="LDS temple icon">
+        <div class="title">
+            <h1>The Temple Inn & Suites</h1>
+            <h3 class="motto">We take care of the details so you can have a relaxing visit to the temple.</h3>
+        </div>
+    </header>
+    <nav>
+        <ul class='menu'>
+            <li><a href='#' title='Menu' onclick='toggleMenu()'>&#9776; Menu</a></li>
+            <li><a href='index.html'>Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a class="active" href="reservations.html">Reservations</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <p>If you are interested in our long-term stay options for full or part-time temple missionaries, please visit our <a href="long-term-stays.html">long term stay page</a> for more information.</p>
+    <form method="get" action="thanks.html">
+        <fieldset>
+            <legend>Reservation Name</legend>
+            <label>* Full Name <input type="text" name="fullname" required pattern="[A-Za-z ]" placeholder ="Full Name"></label>
+            <label>* Email Address <input type="email" name="email" required placeholder="someone@gmail.com"></label>
+            <label>* Phone Number <input type="tel" name="phone" required placeholder="1235551234"></label>
+            <label>Home State or Country <input type="text" name="home"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Stay Information</legend>
+            <label>* At which location would you like to reserve a room?
+                <select name="location">
+                    <option value="">Select Location ...</option>
+                    <option value="medford">Medford, OR</option>
+                    <option value="portland">Portland, OR</option>
+                    <option value="seattle">Seattle, WA</option>
+                    <option value="spokane">Spokane, WA</option>
+                </select>
+            <label>* Start date of your stay <input type="date" name="start" required>
+            </label>
+            <label>* End date of your stay <input type="date" name="end" required></label>
+            <label>* Type of room needed 
+                <select name="room" required>
+                    <option value="">Select room type ...</option>
+                    <option value="single">Single queen size bed</option>
+                    <option value="double">Two queen size beds</option>
+                    <option value="king">Single king size bed</option>
+                    <option value="suite">Suite</option>
+                </select>
+                <div>Special accommodation needs or comments</div>
+                <label id="info"><textarea name="comments" rows="10" cols="40"></textarea></label>
+                <label><input type="submit" value="Send My Reservation" class="submitBtn"></label>
+        </fieldset>
+    </form>
+    <footer>
+        <p>©2019 The Temple Inn & Suites | <a href="resources.html">Resources</a> | All Rights Reserved</p>
+    </footer>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>

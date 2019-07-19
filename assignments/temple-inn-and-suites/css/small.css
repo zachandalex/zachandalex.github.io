@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+h1, dt{
+    font-family: 'Great Vibes', cursive;
+    color: #4f8c8c;
+    font-size: 45px;
+}
+header {
+    display: flex;
+    justify-content: center;
+    font-family: 'Great Vibes', cursive;
+    color: #fff6f4;
+    background-color: #4f8c8c;
+    text-align: center;
+    /*font-size: 55px;*/
+}
+header h1 {
+    color: #fff6f4;
+    text-align: center;
+    font-size: 55px;
+}
+.title{
+    display: inline-block;
+    vertical-align: top;
+}
+h2 {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 35px;
+    color: black;
+}
+h3 {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 30px;
+    color: black;
+}
+p, dd{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 25px;
+    color: black;
+    margin: 10px;
+}
+nav {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    background-color: #f7d5d6;
+    color: black;
+    display: inline-block;
+}
+footer {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 25px;
+    color: #fff6f4;
+    background-color: #4f8c8c;
+}
+a {
+    color: #4f8c8c;
+    font-size: 25px;
+    font-family: 'Hind Siliguri', sans-serif;
+    text-decoration: none;
+}
+li a {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+}
+.motto {
+    font-family: 'Great Vibes', cursive;
+    color: #fff6f4;
+    background-color: #4f8c8c;
+    font-size: 35px;
+}
+.logo{
+    display: inline-block;
+    height: 150px;
+    margin: 10px 10px 0 0;
+}
+.menu {
+    list-style: none;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: #000000;  
+    text-decoration: none;
+}
+.menu li:first-child {
+    display: block;
+}
+.menu li {
+    display: none;
+}
+.menu a {
+    font-size: 25px;
+    font-family: 'Hind Siliguri', sans-serif;
+    background-color: #f7d5d6;
+    text-align: center;
+    display: block;
+    padding: 0 5px 0 5px;
+    color: #000000;  
+    text-decoration: none; 
+}
+.responsive li {
+    display: block;
+}
+.templepics {
+    max-width: 600px;
+    display: block;
+    margin: 10px auto;
+    width: 90%;
+}
+.temples h1 {
+    max-width: 100%;
+    padding: 10px;
+    font-family: 'Great Vibes', cursive;
+    background-color: #4f8c8c;
+    color: #fff6f4;
+    font-size: 45px;
+    text-align: center;
+}
+.temples p {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 25px;
+    max-width: 80%;
+    margin: auto;
+    padding: 5px 0 5px 0;
+    text-align: center;
+}
+.subreservation {
+    background-color: #f7d5d6;
+    color: black;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 25px;
+    display: inline-block;
+}
+li a.active
+    {
+        background-color: #000000;
+        color: #f7d5d6;
+    }
+a:visited
+    {
+        color: darkblue;
+    }
+a:hover 
+    {
+        text-decoration: underline;
+        color: #4f8c8c;
+    }
+a:active
+    {
+        background-color: #000000;
+        color: #f7d5d6;
+    }
+footer a:hover {
+    color: #f7d5d6;
+}
+footer a {
+    color: #f7d5d6;
+}

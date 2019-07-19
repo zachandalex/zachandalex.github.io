@@ -1,0 +1,28 @@
+@media screen and (min-width: 1000px) 
+{
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+.menu li:first-child{
+    display: none;
+}
+.menu li{
+    display: inline-block;
+    font-size: 25px;
+    font-family: 'Hind Siliguri', sans-serif;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0 5px 0 5px;
+}
+/*.templepics {
+    float: left;
+    position: relative;
+    max-width: 300px;
+    width: 90%;
+    }*/
+
+}

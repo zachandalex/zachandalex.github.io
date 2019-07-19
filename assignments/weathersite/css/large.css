@@ -81,7 +81,7 @@
 .townstats
     {
       display: grid;
-      margin: auto;
+      margin: 10px auto;
       grid-template-columns: 1fr 1fr 1fr;
       max-width: 900px;
       width: 95%;
