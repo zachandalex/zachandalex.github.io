@@ -185,9 +185,12 @@ a:active
         background-color: #000000;
         color: #f7d5d6;
     }
-footer a:hover {
-    color: #f7d5d6;
+footer .resource {
+    color: white;
 }
-footer a {
-    color: #f7d5d6;
+footer a:hover {
+    color: white;
+}
+footer a:visited {
+    color: rgb(211, 211, 211);
 }
