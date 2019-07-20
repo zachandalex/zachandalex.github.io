@@ -1,0 +1,11 @@
+@media screen and (min-width: 700px)
+{
+    .temples, .button {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        }
+    /*.button {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }*/
+}

@@ -30,6 +30,8 @@
             <li><a href="temples.html">Temples</a></li>
             <li><a class="active" href="reservations.html">Reservations</a></li>
             <li><a href="services.html">Services</a></li>
+            <li><a href="long-term-stays.html">Long-Term Stays</a></li>
+            <li><a href="reception.html">Reception Packages</li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
@@ -37,7 +39,8 @@
     <form method="get" action="thanks.html">
         <fieldset>
             <legend>Reservation Name</legend>
-            <label>* Full Name <input type="text" name="fullname" required pattern="[A-Za-z ]" placeholder ="Full Name"></label>
+            <label>* Full Name <input type="text" name="fullname" required pattern="[A-Za-z ]{5,}"
+                placeholder="5 or more alpha characters"></label>
             <label>* Email Address <input type="email" name="email" required placeholder="someone@gmail.com"></label>
             <label>* Phone Number <input type="tel" name="phone" required placeholder="1235551234"></label>
             <label>Home State or Country <input type="text" name="home"></label>

@@ -6,6 +6,14 @@ h1, dt{
     color: #4f8c8c;
     font-size: 45px;
 }
+main {
+    max-width: 85%;
+    margin: auto;
+}
+.contact {
+    display: block;
+    text-align: center;
+}
 header {
     display: flex;
     justify-content: center;
@@ -13,6 +21,7 @@ header {
     color: #fff6f4;
     background-color: #4f8c8c;
     text-align: center;
+    max-width: 100%;
     /*font-size: 55px;*/
 }
 header h1 {
@@ -43,13 +52,17 @@ p, dd{
 nav {
     margin: auto;
     text-align: center;
-    width: 100%;
+    max-width: 100%;
     padding: 5px;
     background-color: #f7d5d6;
     color: black;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
 }
 footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
     font-family: 'Hind Siliguri', sans-serif;
     font-size: 25px;
     color: #fff6f4;
@@ -112,7 +125,11 @@ li a {
     margin: 10px auto;
     width: 90%;
 }
-.temples h1 {
+.temples {
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+.templehead {
     max-width: 100%;
     padding: 10px;
     font-family: 'Great Vibes', cursive;
@@ -128,6 +145,16 @@ li a {
     margin: auto;
     padding: 5px 0 5px 0;
     text-align: center;
+}
+button {
+    border-radius: 8px;
+}
+button:hover {
+    box-shadow: 0 10px 15px 0 #4f8c8c;
+}
+.button {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 .subreservation {
     background-color: #f7d5d6;

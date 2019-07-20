@@ -30,9 +30,51 @@
             <li><a href="temples.html">Temples</a></li>
             <li><a href="reservations.html">Reservations</a></li>
             <li><a href="services.html">Services</a></li>
+            <li><a href="long-term-stays.html">Long-Term Stays</a></li>
+            <li><a href="reception.html">Reception Packages</li>
             <li><a class="active" href="contact.html">Contact</a></li>
         </ul>
     </nav>
+    <main class="contact">
+        <h1>The Temple Inn & Suites</h1> 
+        <p>4800 Montgomery Ln #300</br> 
+            Bethesda, MD 20814.</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4050197013235!2d-77.09772048416862!3d38.983251779557534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1563651446919!5m2!1sen!2sus"
+            width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <p>Phone Number: 1-800-240-1234</p>
+        <p>Email: <a href="mailto:contact@templeinnandsuites.com">contact@templeinnandsuites.com</a></p>
+        <div class="contactform">
+            <h1>Contact Us</h1>
+            <form method="get" action="contactthanks.html">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label>Full Name <input type="text" name="fullname" required pattern="[A-Za-z ]{5,}"
+                        placeholder="5 or more alpha characters"></label>
+                    <label>Email Address <input type="email" name="email" required placeholder="someone@gmail.com"></label>
+                    <label>Phone Number <input type="tel" name="phone" placeholder="1235551234"></label>
+                    <label>Preferred Contact Method<select name="method">
+                        <option value="">Select Contact Method...</option>
+                        <option value="email">Email</option>
+                        <option value="phone">Phone Call</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Contact Details</legend>
+                    <label>Reason For Contact<select name="reason">
+                        <option value="">Select a Reason...</option>
+                        <option value="rates">Question about rates</option>
+                        <option value="reservation">Change to existing registration (please include reservation number)</option>
+                        <option value="reception">Question about wedding reception venue or options</option>
+                        <option value="other">Other (please provide details in comments)</option>
+                    </select>
+                    <div>Comments</div>
+                    <label><textarea name="comments" rows="10" cols="40"></textarea></label>
+                    <label><input type="submit" value="Submit Contact Form"></label>
+                </fieldset>
+            </form>
+        </div>
+    </main>
     <footer>
         <p>©2019 The Temple Inn & Suites | <a href="resources.html">Resources</a> | All Rights Reserved</p>
     </footer>
