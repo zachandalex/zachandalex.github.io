@@ -1,7 +1,7 @@
 {
     "temples" : [
         {
-            "name": "Seattle Washington",
+            "name": "Seattle Washington Temple",
             "closures": [
                 "Sunday, 18 August 2019 - Monday, 2 September 2019",
                 "Saturday, 5 October 2019",
@@ -18,7 +18,7 @@
             ]
         },
         {
-            "name": "Spokane Washington",
+            "name": "Spokane Washington Temple",
             "closures": [
                 "Monday, 30 September 2019 - Monday, 14 October 2019",
                 "Wednesday, 27 November 2019 (Limited Hours)",
@@ -38,7 +38,7 @@
             ]
         },
         {
-            "name": "Medford Oregon",
+            "name": "Medford Oregon Temple",
             "closures": [
                 "Tuesday, 23 July 2019 - Monday, 2 September 2019",
                 "Saturday, 5 October 2019",
@@ -58,7 +58,7 @@
             ]
         },
         {
-            "name": "Portland Oregon",
+            "name": "Portland Oregon Temple",
             "closures": [
                 "Monday, 29 July 2019 - Monday, 12 August 2019",
                 "Saturday, 5 October 2019",
