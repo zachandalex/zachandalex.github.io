@@ -35,7 +35,8 @@
             <li><a class="active" href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <main class="contact">
+    <main>
+        <div class="contact">
         <h1>The Temple Inn & Suites</h1> 
         <p>4800 Montgomery Ln #300</br> 
             Bethesda, MD 20814.</p>
@@ -44,6 +45,7 @@
             width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
         <p>Phone Number: 1-800-240-1234</p>
         <p>Email: <a href="mailto:contact@templeinnandsuites.com">contact@templeinnandsuites.com</a></p>
+        </div>
         <div class="contactform">
             <h1>Contact Us</h1>
             <form method="get" action="contactthanks.html">
@@ -53,7 +55,7 @@
                         placeholder="5 or more alpha characters"></label>
                     <label>Email Address <input type="email" name="email" required placeholder="someone@gmail.com"></label>
                     <label>Phone Number <input type="tel" name="phone" placeholder="1235551234"></label>
-                    <label>Preferred Contact Method<select name="method">
+                    <label>Preferred Contact Method<select name="method" required>
                         <option value="">Select Contact Method...</option>
                         <option value="email">Email</option>
                         <option value="phone">Phone Call</option>
@@ -61,7 +63,7 @@
                 </fieldset>
                 <fieldset>
                     <legend>Contact Details</legend>
-                    <label>Reason For Contact<select name="reason">
+                    <label>Reason For Contact<select name="reason" required>
                         <option value="">Select a Reason...</option>
                         <option value="rates">Question about rates</option>
                         <option value="reservation">Change to existing registration (please include reservation number)</option>
@@ -70,7 +72,7 @@
                     </select>
                     <div>Comments</div>
                     <label><textarea name="comments" rows="10" cols="40"></textarea></label>
-                    <label><input type="submit" value="Submit Contact Form"></label>
+                    <label><input class="subreservation" type="submit" value="Submit Contact Form"></label>
                 </fieldset>
             </form>
         </div>

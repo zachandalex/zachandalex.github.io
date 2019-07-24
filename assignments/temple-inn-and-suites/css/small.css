@@ -43,11 +43,14 @@ h3 {
     font-size: 30px;
     color: black;
 }
-p, dd{
+p, dd, li{
     font-family: 'Hind Siliguri', sans-serif;
     font-size: 25px;
     color: black;
     margin: 10px;
+}
+li {
+    display: flex;
 }
 nav {
     margin: auto;
@@ -81,6 +84,44 @@ li a {
     text-decoration: none;
     list-style: none;
 }
+/*----------------Form Setup----------------*/
+form fieldset {
+    display: flex;
+    border: 2.5px groove #4f8c8c;
+    font-family: 'Hind Siliguri', sans-serif;
+    border-radius:10px;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 95%;
+    font-size: 25px;
+}
+form legend {
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
+    color: #fff6f4;
+    background-color: #4f8c8c;
+    padding: 5px;
+}
+form label, form div {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 25px;
+    padding-top:1rem;
+    /*padding: 10px;*/
+}
+form label input, form label select, textarea {
+    width: 100%;
+    padding: .75rem;
+    margin: 10px auto;
+    background: #f7d5d6;
+    border: 2px solid  #4f8c8c;
+}
+form label input:required, form label select:required {
+    border-left: red solid 3px;
+}
+form label input:required:valid, form label select:required:valid {
+    border-left: #4f8c8c solid 3px;
+}
+/*----------------Form Setup----------------*/
 .motto {
     font-family: 'Great Vibes', cursive;
     color: #fff6f4;
@@ -146,7 +187,11 @@ li a {
     padding: 5px 0 5px 0;
     text-align: center;
 }
-button {
+button{
+    border-radius: 8px;
+    width: 90%;
+}
+input[type=submit] {
     border-radius: 8px;
 }
 button:hover {
@@ -160,11 +205,11 @@ button:hover {
     background-color: #f7d5d6;
     color: black;
     padding: 15px;
-    margin: 15px;
+    margin: 15px auto;
     text-align: center;
     font-family: 'Hind Siliguri', sans-serif;
     font-size: 25px;
-    display: inline-block;
+
 }
 li a.active
     {

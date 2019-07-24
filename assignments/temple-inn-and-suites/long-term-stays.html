@@ -36,10 +36,68 @@
         </ul>
     </nav>
     <main>
-        <p>We have a number of available kitchenette suites available for a low cost to full-time temple missionaries.</p>
+        <p>For those who have been called as full time temple missionaries we have a number of available kitchenette
+            suites available for a low cost. This allows you to live near the temple in which you are serving.</p>
+        <p>The environment that has been built at The Temple Inn & Suites is perfect for our temple missionaries. We
+            have a clean and quiet environment that lives by the same standards you would want to be around.</p>
+        <img src="images/suite-room-350.jpg" alt="long term stay suite">
+        <p>Our suites are 1 bedroom with a king size bed. They are beautifully decorrated to match the local temple,
+            including pictures or the temple and Christ throughout. There is plenty of room for you to add your own
+            touch to the rooms such as family pictures.</p>
+        <p>These suites will be your home away from home and allow you all the comforts you need. The living room area
+            is tastefully decorrated and has seating so you can have visitors come and have a comfortable space to
+            visit.</p>
+        <img src="images/suite-kitchen-350.jpg" alt="long term stay suite kitchenette">
+        <p>Our long term stay suites also feature a fully functional kitchen. You will find a full size refrigerator, a
+            stove top, an oven, and a microwave. In select suites there is also a dishwasher. We have also provided all
+            of the dishes and utensils needed for you so there is no need for you to provide your own.</p>
+        <p>The attached dining room includes a table and seats for 4 people.</p>
+        <p>We look forward to getting to know you better during your stay and helping provide what you need. If you have
+            further questions or would like to check availability of a room near the temple you will be serving please
+            fill out out contact form so we can get back to you with more information.</p>
+        <h1>Contact us for more information or to check availability</h1>
+        <form method="get" action="longtermthanks.html">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label class="top">Full Name <input type="text" name="fullname" required pattern="[A-Za-z ]{5,}"
+                        placeholder="5 or more alpha characters"></label>
+                <label class="top">Email Address <input type="email" name="email" required
+                        placeholder="someone@gmail.com"></label>
+                <label class="top">Phone Number <input type="tel" name="phone" placeholder="1235551234"></label>
+                <label class="top">Preferred Contact Method
+                    <select name="method">
+                        <option value="">Select Contact Method...</option>
+                        <option value="email">Email</option>
+                        <option value="phone">Phone Call</option>
+                    </select>
+            </fieldset>
+            <fieldset>
+                <legend>Stay Information</legend>
+                <label class="top">At which location will you be serving? 
+                    <select name="location" required>
+                        <option value="">Select Location ...</option>
+                        <option value="medford">Medford, OR</option>
+                        <option value="portland">Portland, OR</option>
+                        <option value="seattle">Seattle, WA</option>
+                        <option value="spokane">Spokane, WA</option>
+                    </select>
+                <label class="top">Start date of your mission <input type="date" name="start" required></label>
+                <label class="top">End date of your mission <input type="date" name="end" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Information</legend>
+                <div>Please provide any additional information you would like us to know, including any special
+                    accommodation needs, or ask any questions here.</div>
+                <label class="sbs" id="info"><textarea name="comments" rows="10" cols="40"></textarea></label>
+                <label><input class="subreservation" type="submit" value="Submit Contact Form"></label>
+            </fieldset>
+            
+        </form>
+
     </main>
     <footer>
-        <p>©2019 The Temple Inn & Suites | <a class="resource" href="resources.html">Resources</a> | All Rights Reserved</p>
+        <p>©2019 The Temple Inn & Suites | <a class="resource" href="resources.html">Resources</a> | All Rights Reserved
+        </p>
     </footer>
     <script src="js/menu.js"></script>
 </body>

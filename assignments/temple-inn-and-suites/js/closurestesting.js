@@ -5,15 +5,16 @@ var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
-request.onload = function () { 
+request.onload = function () {
     var closures = request.response;
     showClosures(closures);
 }
 function showClosures(jsonObj) {
     var temples = jsonObj['temples'];
+    var myTemple = document.getElementById("spokane").innerHTML
     var templeNames = ["Portland Oregon Temple", "Medford Oregon Temple", "Seattle Washington Temple", "Spokane Washington Temple"];
     for (var i=0; i < temples.length; i++) {
-        for (var x = 0; x < templeNames.length; x++) {
+        for (var x = 0; x < myTemple.length; x++) {
             if (temples[i].name==templeNames[x]) {
                 var myArticle = document.createElement('article');
                 var myList = document.createElement('ul');
