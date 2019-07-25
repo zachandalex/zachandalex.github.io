@@ -87,6 +87,7 @@ li a {
 /*----------------Form Setup----------------*/
 form fieldset {
     display: flex;
+    flex-direction: column;
     border: 2.5px groove #4f8c8c;
     font-family: 'Hind Siliguri', sans-serif;
     border-radius:10px;
