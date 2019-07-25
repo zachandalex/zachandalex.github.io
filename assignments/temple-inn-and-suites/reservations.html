@@ -55,11 +55,11 @@
                     <option value="seattle">Seattle, WA</option>
                     <option value="spokane">Spokane, WA</option>
                 </select>
-            <label>* Start date of your stay <input type="date" name="start" required>
+            <label>* Start date of your stay <input type="date" name="start" aria-label="Start date of your stay" required>
             </label>
-            <label>* End date of your stay <input type="date" name="end" required></label>
+            <label>* End date of your stay <input type="date" name="end" aria-label="End date of your stay" required></label>
             <label>* Type of room needed 
-                <select name="room" required>
+                <select name="room" aria-label="Type of room needed" required>
                     <option value="">Select room type ...</option>
                     <option value="single">Single queen size bed</option>
                     <option value="double">Two queen size beds</option>
@@ -67,7 +67,7 @@
                     <option value="suite">Suite</option>
                 </select>
                 <div>Special accommodation needs or comments</div>
-                <label id="info"><textarea name="comments" rows="10" cols="40"></textarea></label>
+                <label id="info"><textarea name="comments" rows="10" cols="40"aria-label="Comments and special accommodations"></textarea></label>
                 <label><input type="submit" value="Send My Reservation" class="subreservation"></label>
         </fieldset>
     </form>
