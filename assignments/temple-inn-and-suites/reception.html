@@ -75,7 +75,9 @@
             </ul>
         </ul>
         <h2>Catering Packages</h2>
-        <p>Let us take care of all the food details by providing you with a menu to fit your budget and your needs. Each catering package includes The Temple Inn & Suites staff to discreetly serve your food and clean up through the event.</p>
+        <p>Let us take care of all the food details by providing you with a menu to fit your budget and your needs. Each
+            catering package includes The Temple Inn & Suites staff to discreetly serve your food and clean up through
+            the event.</p>
         <ul>
             <li>Appetizers and Finger Foods Packages</li>
             <ul>
@@ -101,11 +103,56 @@
             </ul>
             <li>Wedding Cake Package</li>
             <ul>
-                <li>Cake flavor options are chocolate, vanilla, carron, and red velvet</li>
+                <li>Cake flavor options are chocolate, vanilla, carrot, and red velvet</li>
                 <li>Two tier wedding cake with basic decorations - $150</li>
                 <li>Three tier or custom decorations - Please contact us for pricing</li>
             </ul>
         </ul>
+        <h2>For more information or to book your reception dates please fill out our contact form</h2>
+        <form method="get" action="contactthanks.html">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label>Full Name (required) <input type="text" name="fullname" required pattern="[A-Za-z ]{5,}"
+                        placeholder="5 or more alpha characters"></label>
+                <label>Email Address (required)<input type="email" name="email" required placeholder="someone@gmail.com"></label>
+                <label>Phone Number (required) <input type="tel" name="phone" required placeholder="1235551234"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Reception Information</legend>
+                <label>Date of Reception (required) <input type="date" name="date" aria-label="Date of your reception"
+                        required></label>
+                <label>Desired Reception Time <input type="text" name="time"></label>
+                <label>At which location would you like to hold your reception? (required)
+                    <select name="location" required>
+                        <option value="">Select Location ...</option>
+                        <option value="medford">Medford, OR</option>
+                        <option value="portland">Portland, OR</option>
+                        <option value="seattle">Seattle, WA</option>
+                        <option value="spokane">Spokane, WA</option>
+                    </select>
+                    <label>Desired Reception Hall (required)
+                        <select name="hall" aria-name="desired reception hall" required>
+                            <option value="">Select reception hall...</option>
+                            <option value="smith">Smith Reception Hall (up to 100 guests)</option>
+                            <option value="young">Young Reception Hall (up to 200 guests)</option>
+                        </select>
+                    <label>How many guests do you expect? <input type="number" name="guests" placeholder="please enter only a number"></label>
+                    <label>Are you interested in a catering package? (required) <select name="catering" multiple required> 
+                        <option value="no">No thank you, we will do our own food.</option>
+                        <option value="yesappetizer">Yes, we would like the Appetizers and Finger Foods Packages</option>
+                        <option value="yesdinner">Yes, we would like the Dinner Package</option>
+                        <option value="yesbar">Yes, we would like the Non-Alcoholic Bar Service</option>
+                        <option value="cake">Yes, we would like the Wedding Cake Package</option>
+                        <option value="contactme">Please contact me to discuss options</option>  
+                        </select>
+                        <p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label>Any additional information or special accommodation needs<textarea name="comments" rows="10" cols="40" aria-label="Comments and special accommodations"></textarea></label>
+                <label><input type="submit" value="Send my reception query" class="subreservation"></label>
+            </fieldset>
+        </form>
     </main>
     <footer>
         <p>©2019 The Temple Inn & Suites | <a class="resource" href="resources.html">Resources</a> | All Rights Reserved

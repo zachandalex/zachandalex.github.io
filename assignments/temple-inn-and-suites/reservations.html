@@ -39,15 +39,15 @@
     <form method="get" action="thanks.html">
         <fieldset>
             <legend>Reservation Name</legend>
-            <label>* Full Name <input type="text" name="fullname" required pattern="[A-Za-z ]{5,}"
+            <label>Full Name <input type="text" name="fullname" required pattern="[A-Za-z ]{5,}"
                 placeholder="5 or more alpha characters"></label>
-            <label>* Email Address <input type="email" name="email" required placeholder="someone@gmail.com"></label>
-            <label>* Phone Number <input type="tel" name="phone" required placeholder="1235551234"></label>
+            <label>Email Address <input type="email" name="email" required placeholder="someone@gmail.com"></label>
+            <label>Phone Number <input type="tel" name="phone" required placeholder="1235551234"></label>
             <label>Home State or Country <input type="text" name="home"></label>
         </fieldset>
         <fieldset>
             <legend>Stay Information</legend>
-            <label>* At which location would you like to reserve a room?
+            <label>At which location would you like to reserve a room?
                 <select name="location" required>
                     <option value="">Select Location ...</option>
                     <option value="medford">Medford, OR</option>
@@ -55,10 +55,10 @@
                     <option value="seattle">Seattle, WA</option>
                     <option value="spokane">Spokane, WA</option>
                 </select>
-            <label>* Start date of your stay <input type="date" name="start" aria-label="Start date of your stay" required>
+            <label>Start date of your stay <input type="date" name="start" aria-label="Start date of your stay" required>
             </label>
-            <label>* End date of your stay <input type="date" name="end" aria-label="End date of your stay" required></label>
-            <label>* Type of room needed 
+            <label>End date of your stay <input type="date" name="end" aria-label="End date of your stay" required></label>
+            <label>Type of room needed 
                 <select name="room" aria-label="Type of room needed" required>
                     <option value="">Select room type ...</option>
                     <option value="single">Single queen size bed</option>
