@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=10'>
-    <title>The Temple Inn & Suites - Home</title>
+    <title>The Temple Inn & Suites - Reception Packages</title>
     <meta name='description' content='The Temple Inn & Suites Home Page'>
     <link rel='stylesheet' href='css/normalize.css'>
     <link rel='stylesheet' href='css/small.css'>
@@ -109,13 +109,18 @@
             </ul>
         </ul>
         <h2>For more information or to book your reception dates please fill out our contact form</h2>
-        <form method="get" action="contactthanks.html">
+        <form method="get" action="receptionthanks.html">
             <fieldset>
                 <legend>Contact Information</legend>
                 <label>Full Name (required) <input type="text" name="fullname" required pattern="[A-Za-z ]{5,}"
                         placeholder="5 or more alpha characters"></label>
                 <label>Email Address (required)<input type="email" name="email" required placeholder="someone@gmail.com"></label>
                 <label>Phone Number (required) <input type="tel" name="phone" required placeholder="1235551234"></label>
+                <label>Preferred Contact Method<select name="method" required>
+                        <option value="">Select Contact Method...</option>
+                        <option value="email">Email</option>
+                        <option value="phone">Phone Call</option>
+                    </select>
             </fieldset>
             <fieldset>
                 <legend>Reception Information</legend>
@@ -131,7 +136,7 @@
                         <option value="spokane">Spokane, WA</option>
                     </select>
                     <label>Desired Reception Hall (required)
-                        <select name="hall" aria-name="desired reception hall" required>
+                        <select name="hall" alt="desired reception hall" required>
                             <option value="">Select reception hall...</option>
                             <option value="smith">Smith Reception Hall (up to 100 guests)</option>
                             <option value="young">Young Reception Hall (up to 200 guests)</option>
