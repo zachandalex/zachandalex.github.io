@@ -22,6 +22,13 @@
     .button {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-} 
+    } 
+    .reception {
+        float: left;
+        position: relative;
+        width: auto;
+        max-width: 300px;
+        padding-right: 15px;
+    }
 
 }

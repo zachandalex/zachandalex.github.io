@@ -134,6 +134,16 @@ form label input:required:valid, form label select:required:valid {
     height: 150px;
     margin: 10px 10px 0 0;
 }
+.reception {
+    display: flex;
+    justify-content: center;
+    max-width: 95%;
+}
+.receptionheader {
+text-align: center;
+padding: 15px;
+margin: 0 auto;
+}
 .menu {
     list-style: none;
     text-align: center;
