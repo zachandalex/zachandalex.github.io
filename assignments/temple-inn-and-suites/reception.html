@@ -128,7 +128,7 @@
                         required></label>
                 <label>Desired Reception Time <input type="text" name="time"></label>
                 <label>At which location would you like to hold your reception? (required)
-                    <select name="location" required>
+                    <select name="location" aria-label="Location of reception" required>
                         <option value="">Select Location ...</option>
                         <option value="medford">Medford, OR</option>
                         <option value="portland">Portland, OR</option>
@@ -136,13 +136,13 @@
                         <option value="spokane">Spokane, WA</option>
                     </select>
                     <label>Desired Reception Hall (required)
-                        <select name="hall" alt="desired reception hall" required>
+                        <select name="hall" aria-label="desired reception hall" required>
                             <option value="">Select reception hall...</option>
                             <option value="smith">Smith Reception Hall (up to 100 guests)</option>
                             <option value="young">Young Reception Hall (up to 200 guests)</option>
                         </select>
-                    <label>How many guests do you expect? <input type="number" name="guests" placeholder="please enter only a number"></label>
-                    <label>Are you interested in a catering package? (required) <select name="catering" multiple required> 
+                    <label>How many guests do you expect? <input type="number" name="guests" placeholder="please enter only a number" aria-label="number of guests"></label>
+                    <label>Are you interested in a catering package? (required) <select name="catering" multiple aria-label="are you interested in a catering package" required> 
                         <option value="no">No thank you, we will do our own food.</option>
                         <option value="yesappetizer">Yes, we would like the Appetizers and Finger Foods Packages</option>
                         <option value="yesdinner">Yes, we would like the Dinner Package</option>
