@@ -26,7 +26,7 @@
     <nav class='menu'>
         <ul>
             <li><a href='#' title='Menu' onclick='toggleMenu()'>&#9776; Menu</a></li>
-            <li><a href='index.html'aria-label="home page">Home</a></li>
+            <li><a href='index.html' aria-label="home page">Home</a></li>
             <li><a href="temples.html" aria-label="temples page">Temples</a></li>
             <li><a href="reservations.html" aria-label="reservations page">Reservations</a></li>
             <li><a href="services.html" aria-label="services page">Services</a></li>
@@ -73,7 +73,7 @@
             </fieldset>
             <fieldset>
                 <legend>Stay Information</legend>
-                <label class="top">At which location will you be serving? 
+                <label class="top">At which location will you be serving?
                     <select name="location" required>
                         <option value="">Select Location ...</option>
                         <option value="medford">Medford, OR</option>
@@ -81,17 +81,19 @@
                         <option value="seattle">Seattle, WA</option>
                         <option value="spokane">Spokane, WA</option>
                     </select>
-                <label class="top">Start date of your mission <input type="date" name="start" aria-label="Start date of your mission" required></label>
-                <label class="top">End date of your mission <input type="date" name="end" aria-label="End date of your mission" required></label>
+                    <label class="top">Start date of your mission <input type="date" name="start"
+                            aria-label="Start date of your mission" required></label>
+                    <label class="top">End date of your mission <input type="date" name="end"
+                            aria-label="End date of your mission" required></label>
             </fieldset>
             <fieldset>
                 <legend>Additional Information</legend>
-                <div>Please provide any additional information you would like us to know, including any special
-                    accommodation needs, or ask any questions here.</div>
-                <label class="sbs" id="info"><textarea name="comments" rows="10" cols="40" aria-label="Any additional information, accessibility needs, and comments"></textarea></label>
+                <label id="info">Please provide any additional information you would like us to know, including any
+                    special accommodation needs, or ask any questions here.<textarea name="comments" rows="10" cols="40"
+                        aria-label="Any additional information, accessibility needs, and comments"></textarea></label>
                 <label><input class="subreservation" type="submit" value="Submit Contact Form"></label>
             </fieldset>
-            
+
         </form>
 
     </main>
