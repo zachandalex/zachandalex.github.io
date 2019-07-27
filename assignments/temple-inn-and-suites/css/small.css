@@ -51,6 +51,11 @@ h3 {
     font-size: 25px;
     color: black;
 }
+iframe {
+    width: 400px; 
+    height: 300px;
+    border: none;
+}
 p, dd, li{
     font-family: 'Hind Siliguri', sans-serif;
     font-size: 25px;
