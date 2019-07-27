@@ -92,6 +92,9 @@ li a {
     text-decoration: none;
     list-style: none;
 }
+img {
+    padding-left: 10px;
+}
 /*----------------Form Setup----------------*/
 form fieldset {
     display: flex;
