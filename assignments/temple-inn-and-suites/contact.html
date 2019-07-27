@@ -49,11 +49,11 @@
             <form method="get" action="contactthanks.html">
                 <fieldset>
                     <legend>Contact Information</legend>
-                    <label>Full Name <input type="text" name="fullname" required pattern="[A-Za-z ]{5,}"
+                    <label>Full Name (required) <input type="text" name="fullname" required pattern="[A-Za-z ]{5,}"
                         placeholder="5 or more alpha characters"></label>
-                    <label>Email Address <input type="email" name="email" required placeholder="someone@gmail.com"></label>
-                    <label>Phone Number <input type="tel" name="phone" placeholder="1235551234"></label>
-                    <label>Preferred Contact Method<select name="method" required>
+                    <label>Email Address (required) <input type="email" name="email" required placeholder="someone@gmail.com"></label>
+                    <label>Phone Number (required) <input type="tel" name="phone" placeholder="1235551234"></label>
+                    <label>Preferred Contact Method (required) <select name="method" required>
                         <option value="">Select Contact Method...</option>
                         <option value="email">Email</option>
                         <option value="phone">Phone Call</option>
@@ -61,7 +61,7 @@
                 </fieldset>
                 <fieldset>
                     <legend>Contact Details</legend>
-                    <label>Reason For Contact<select name="reason" required>
+                    <label>Reason For Contact (required) <select name="reason" required>
                         <option value="">Select a Reason...</option>
                         <option value="rates">Question about rates</option>
                         <option value="reservation">Change to existing registration (please include reservation number)</option>

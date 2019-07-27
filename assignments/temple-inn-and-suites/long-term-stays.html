@@ -59,9 +59,9 @@
         <form method="get" action="longtermthanks.html">
             <fieldset>
                 <legend>Contact Information</legend>
-                <label class="top">Full Name <input type="text" name="fullname" required pattern="[A-Za-z ]{5,}"
+                <label class="top">Full Name (required) <input type="text" name="fullname" required pattern="[A-Za-z ]{5,}"
                         placeholder="5 or more alpha characters"></label>
-                <label class="top">Email Address <input type="email" name="email" required
+                <label class="top">Email Address (required) <input type="email" name="email" required
                         placeholder="someone@gmail.com"></label>
                 <label class="top">Phone Number <input type="tel" name="phone" placeholder="1235551234"></label>
                 <label class="top">Preferred Contact Method
@@ -73,7 +73,7 @@
             </fieldset>
             <fieldset>
                 <legend>Stay Information</legend>
-                <label class="top">At which location will you be serving?
+                <label class="top">At which location will you be serving? (required)
                     <select name="location" required>
                         <option value="">Select Location ...</option>
                         <option value="medford">Medford, OR</option>
@@ -81,9 +81,9 @@
                         <option value="seattle">Seattle, WA</option>
                         <option value="spokane">Spokane, WA</option>
                     </select>
-                    <label class="top">Start date of your mission <input type="date" name="start"
+                    <label class="top">Start date of your mission (required) <input type="date" name="start"
                             aria-label="Start date of your mission" required></label>
-                    <label class="top">End date of your mission <input type="date" name="end"
+                    <label class="top">End date of your mission (required) <input type="date" name="end"
                             aria-label="End date of your mission" required></label>
             </fieldset>
             <fieldset>
